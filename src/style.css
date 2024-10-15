@@ -1,0 +1,125 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+}
+.weather-container {
+  width: 650px;
+  margin: 45px auto;
+  padding: 30px;
+  height: auto;
+  border-radius: 16px;
+  background-image: url("images/blue-sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.search-form-input {
+  width: 80%;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.search-form-input:focus {
+  outline: none;
+}
+.search-form-submit {
+  padding: 15px 30px;
+  margin-left: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #2772db;
+  cursor: pointer;
+}
+.search-form-submit:hover {
+  opacity: 0.7;
+}
+.weather-content {
+  display: flex;
+  justify-content: space-between;
+}
+.fa-location-dot {
+  font-size: 25px;
+  position: relative;
+  top: -4px;
+}
+
+.week-days {
+  font-size: 26px;
+}
+.weather-temperature {
+  display: flex;
+  line-height: 1;
+}
+.weather-temperature-current {
+  font-size: 80px;
+}
+.weather-temperature-unit {
+  font-size: 30px;
+}
+.weather-temperature-icon {
+  position: relative;
+  bottom: 6px;
+  right: 8px;
+  width: 90px;
+}
+.weather-description {
+  opacity: 0.7;
+  line-height: 28px;
+}
+
+strong {
+  color: #01005e;
+}
+.weather-forecast-description {
+  text-align: right;
+  font-weight: 700;
+  font-size: 17px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.weather-forecast-day {
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.weather-forecast-icon {
+  font-size: 38px;
+}
+.weather-forecast-temperatures {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.weather-forecast-temp {
+  padding: 0 10px;
+}
+.weather-forecast-content {
+  padding: 6px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+.weather-forecast-content:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #01005e;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 5px 0 0 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+footer a {
+  color: #01005e;
+}

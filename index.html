@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>WEATHER APPLICATION</title>
+  </head>
+  <body>
+    <div class="weather-container">
+      <header>
+        <form id="form">
+          <input
+            type="search"
+            placeholder="Enter A City..."
+            required
+            autofocus
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-submit" />
+        </form>
+      </header>
+
+      <main>
+        <h1 id="city">
+          <i class="fa-solid fa-location-dot"></i>
+        </h1>
+
+        <div class="weather-content">
+          <div>
+            <div class="weather-temperature">
+              <span
+                class="weather-temperature-current"
+                id="weather-temperature-current"
+              ></span>
+              <span class="weather-temperature-unit">°</span>
+
+              <span id="icon"> </span>
+            </div>
+
+            <div class="weather-description">
+              <strong>20° / 10°</strong> Feels like
+              <strong id="weather-feels"></strong> <br />
+              Humidity <strong id="humidity"></strong>, Wind
+              <strong id="wind-speed"></strong>
+            </div>
+          </div>
+
+          <span class="week-days" id="week-days"> </span>
+        </div>
+
+        <div class="weather-forecast-description">
+          <p><span id="condition"></span>. Highs 20° & Lows 10°.</p>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast"></div>
+      </main>
+
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Clementine</a>, is open-sourced on
+          <a href="#" target="_blank">GitHub</a>
+          and hosted on
+          <a href="#" target="_blank">Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
