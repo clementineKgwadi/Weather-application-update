@@ -40,11 +40,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.fa-location-dot {
-  font-size: 25px;
-  position: relative;
-  top: -4px;
-}
 
 .week-days {
   font-size: 26px;
@@ -87,11 +82,13 @@ strong {
 }
 .weather-forecast-day {
   font-size: 17px;
-  line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 .weather-forecast-icon {
-  font-size: 38px;
+  display: block;
+  margin: 0 auto;
+  width: 88px;
+  height: 88px;
 }
 .weather-forecast-temperatures {
   display: flex;
@@ -99,7 +96,7 @@ strong {
   margin-top: 10px;
 }
 .weather-forecast-temp {
-  padding: 0 10px;
+  padding: 0 6px;
 }
 .weather-forecast-content {
   padding: 6px;
